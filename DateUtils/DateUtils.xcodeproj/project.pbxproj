@@ -12,6 +12,8 @@
 		7C2FB25923A6E22200D3857B /* DateUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C2FB24B23A6E22200D3857B /* DateUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C2FB26323A6E28E00D3857B /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FB26223A6E28E00D3857B /* DateUtils.swift */; };
 		7C2FB26423A6E28E00D3857B /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FB26223A6E28E00D3857B /* DateUtils.swift */; };
+		7C2FB29F23A8BA1B00D3857B /* DUDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FB29E23A8BA1B00D3857B /* DUDateFormat.swift */; };
+		7C2FB2A023A8BA1B00D3857B /* DUDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2FB29E23A8BA1B00D3857B /* DUDateFormat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		7C2FB25623A6E22200D3857B /* DateUtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtilsTests.swift; sourceTree = "<group>"; };
 		7C2FB25823A6E22200D3857B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C2FB26223A6E28E00D3857B /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		7C2FB29E23A8BA1B00D3857B /* DUDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUDateFormat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				7C2FB24B23A6E22200D3857B /* DateUtils.h */,
 				7C2FB24C23A6E22200D3857B /* Info.plist */,
 				7C2FB26223A6E28E00D3857B /* DateUtils.swift */,
+				7C2FB29E23A8BA1B00D3857B /* DUDateFormat.swift */,
 			);
 			path = DateUtils;
 			sourceTree = "<group>";
@@ -201,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C2FB26323A6E28E00D3857B /* DateUtils.swift in Sources */,
+				7C2FB29F23A8BA1B00D3857B /* DUDateFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +215,7 @@
 			files = (
 				7C2FB25723A6E22200D3857B /* DateUtilsTests.swift in Sources */,
 				7C2FB26423A6E28E00D3857B /* DateUtils.swift in Sources */,
+				7C2FB2A023A8BA1B00D3857B /* DUDateFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
