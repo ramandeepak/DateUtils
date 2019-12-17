@@ -16,7 +16,40 @@ public class DateUtils {
         
     }
     
-    private var dateFormatter: DateFormatter {
-        return DateFormatter()
+    public func convert(inputDateString: String, inputFormat: DUDateFormat, toFormat: DUDateFormat) -> String {
+        let inputFormatter = DUFormatterFactory.getFormatter(for: inputFormat)
+        let toFormatter = DUFormatterFactory.getFormatter(for: toFormat)
+        print(inputFormatter == toFormatter)
+        return "Implementation yet to be done."
     }
+}
+
+private class DUFormatterFactory {
+    
+    public static func getFormatter(for format: DUDateFormat) -> DateFormatter {
+        
+        switch format {
+            
+        case .standardFormatter:
+            return DUFormatterFactory.standardFormatter
+        case .shortFormatter:
+            return DUFormatterFactory.defaultFormatter
+        case .mediumFormatter:
+            return DUFormatterFactory.defaultFormatter
+        case .longFormatter:
+            return DUFormatterFactory.defaultFormatter
+        case .fullFormatter:
+            return DUFormatterFactory.defaultFormatter
+        }
+    }
+    
+    private static let standardFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = DUDateFormat.standardFormatter.rawValue
+        return formatter
+    }()
+    
+    private static let defaultFormatter: DateFormatter = {
+         return DateFormatter()
+    }()
 }
