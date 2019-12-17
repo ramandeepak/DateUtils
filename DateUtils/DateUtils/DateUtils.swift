@@ -30,22 +30,22 @@ private class DUFormatterFactory {
         
         switch format {
             
-        case .standardFormatter:
+        case .standard:
             return DUFormatterFactory.standardFormatter
-        case .shortFormatter:
+        case .short:
             return DUFormatterFactory.defaultFormatter
-        case .mediumFormatter:
+        case .medium:
             return DUFormatterFactory.defaultFormatter
-        case .longFormatter:
+        case .long:
             return DUFormatterFactory.defaultFormatter
-        case .fullFormatter:
+        case .full:
             return DUFormatterFactory.defaultFormatter
         }
     }
     
     private static let standardFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = DUDateFormat.standardFormatter.rawValue
+        formatter.dateFormat = DUDateFormat.standard.rawValue
         return formatter
     }()
     
